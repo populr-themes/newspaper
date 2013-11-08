@@ -24,9 +24,10 @@
   <!-- Put your theme's inside this script tag. The script tag will 
        prevent issues with quote escaping and invalid markup. -->
   <script id="theme" type="text/x-handlebars-template">
-    {{#if title}}
-    <div class="pop-title-wrapper">{{{title}}}</div>
-    {{/if}}
+    <div class="pop-title-wrapper">
+      {{logo max_width=175 max_height=60}}
+      {{{title}}}
+    </div>
 
     {{#region "columnizer" id="main-region" max_cols="3" dummy_content="T-1|T-1,T-2|T-1,T-2,T-3|I-1|I-2|I-1,I-2|I-1,I-2,I-3|V-1|V-2|V-1,V-2|V-1,V-2,V-3|D-1|D-2|D-1,D-2|D-1,D-2,D-3|E-1|E-2|E-1,E-2|E-1,E-2,E-3" default_content="I-1|T-2" max_auto_assets="0"}}
 

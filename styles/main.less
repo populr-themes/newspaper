@@ -34,6 +34,8 @@ body {
     min-height: 400px;
   }
 
+  #header-border {}
+
   #title-region {
     width: 810px;
     clear: both;
@@ -134,6 +136,7 @@ body {
   .pop-title-wrapper {
     margin: 30px 31px 0 31px;
 		padding-bottom: 25px;
+    border-top: 5px solid @text-color;
   }
 
   #pop-logo {
@@ -146,7 +149,6 @@ body {
     font-size: 62px;
     line-height: 1em;
     text-align: center;
-    border-top: 5px solid @text-color;
     background: transparent url("@{base-url}/images/hr.png") no-repeat bottom center;
     letter-spacing: -0.07em;
   }
@@ -323,18 +325,12 @@ body {
 
 }
 
-#pop-logo {
-  border-top: 5px solid @text-color;
-  margin: 30px 31px;
-  padding-top: 25px;
+#logo-wrapper {
+  width: 780px;
 }
 
-.has-logo #pop #pop-title {
-  border-top: none;
-  padding-top: 0;
-}
-.has-logo #pop #pop-title-wrapper {
-  margin-top: 0;
+#pop-logo {
+  margin: 30px auto;
 }
 
 #pop-sharing {
